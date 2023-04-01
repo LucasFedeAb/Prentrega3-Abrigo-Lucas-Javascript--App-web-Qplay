@@ -1,0 +1,47 @@
+/* Header */
+
+#navbar__inline{
+    align-content:center;
+    
+    .span__login{
+        font-size: 0.8rem;
+    }
+
+    .span__login-toggler{
+        font-size: 0.8rem;
+    }
+    .user__img{
+        border-radius: 100%;
+    }
+    .link__index{
+        text-decoration: none;
+        font-weight:bold ;
+    }
+    
+    .letra__q{
+        color: $ColorLetraQ;
+        letter-spacing:1rem;
+    }
+    
+    .letra__p{
+        color:$ColorLetraP;
+    }
+    
+    .letra__l{
+        color:$ColorLetraL;
+    }
+    
+    .letra__a{
+        color:$ColorLetraA;
+    }
+    
+    .letra__y{
+      color:$ColorLetraY;
+    }
+
+    #img-category{
+        display: none;
+    }
+
+}
+

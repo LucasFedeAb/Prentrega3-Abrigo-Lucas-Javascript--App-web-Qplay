@@ -1,0 +1,475 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Vars */
+/* Cierre Vars */
+/* Header */
+#navbar__inline {
+  align-content: center;
+}
+#navbar__inline .span__login {
+  font-size: 0.8rem;
+}
+#navbar__inline .span__login-toggler {
+  font-size: 0.8rem;
+}
+#navbar__inline .user__img {
+  border-radius: 100%;
+}
+#navbar__inline .link__index {
+  text-decoration: none;
+  font-weight: bold;
+}
+#navbar__inline .letra__q {
+  color: #C9FFA5;
+  letter-spacing: 1rem;
+}
+#navbar__inline .letra__p {
+  color: #FFE766;
+}
+#navbar__inline .letra__l {
+  color: #FF6B6B;
+}
+#navbar__inline .letra__a {
+  color: #FFE766;
+}
+#navbar__inline .letra__y {
+  color: #C9FFA5;
+}
+#navbar__inline #img-category {
+  display: none;
+}
+
+/* Footer */
+#footer {
+  /* width: 100%;
+  height: 40px; */
+  /* box-shadow: 0px 0px 10px 0px rgba(1,1,1,1); */
+}
+#footer .bi-arrow-left {
+  width: 45px;
+  height: 40px;
+  /* background-color: $colorCopy; */
+}
+#footer .bi-arrow-left .arrow__return:hover {
+  color: #cccccc;
+}
+#footer .img__icon__foot {
+  width: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  margin-bottom: 2px;
+}
+
+/* Cierre Footer */
+/* Responsive */
+@media screen and (max-width: 767px) {
+  .logo {
+    width: 20%;
+  }
+  .link__categoria {
+    font-size: 0.8rem;
+  }
+  .tittle__index {
+    font-size: 2.5rem;
+  }
+  #button-index {
+    margin-top: 15%;
+  }
+  #button-index .button__jugar {
+    padding: 2% 30% 2% 30%;
+  }
+  #navbar__inline {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+  }
+  .title__categoria {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+  }
+  #answer-buttons-container {
+    grid-template-columns: 1fr;
+  }
+  .question {
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 10%;
+  }
+  .tittle__index {
+    font-size: 3rem;
+  }
+  #button-index {
+    margin-top: 5%;
+  }
+  #button-index .button__jugar {
+    padding: 2% 20% 2% 20%;
+  }
+  .title__categoria {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+  }
+}
+/* fin Responsive  */
+/* Index */
+html {
+  font-family: sans-serif;
+}
+
+#body-index {
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background: url(../Image/Background/abtracto9.jpg) no-repeat center center;
+  background-size: cover;
+  box-shadow: 0.5;
+  opacity: 0.9;
+  text-align: center;
+}
+
+#logo-animate {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.img__logo__index {
+  width: 100%;
+  max-width: 400px;
+  animation: spin 3s linear reverse;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+    animation-duration: 4s;
+  }
+}
+
+#name-GameApp .tittle__index {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+#name-GameApp .tittle__index .span__nameGame {
+  display: inline-block;
+  text-shadow: 1px 1px 0;
+  transition: transform 0.5s ease-in-out;
+  letter-spacing: 0.1rem;
+  transform: rotate(-10deg);
+}
+#name-GameApp .tittle__index .span__nameGame.letra__q {
+  color: #C9FFA5;
+  letter-spacing: 1rem;
+}
+#name-GameApp .tittle__index .span__nameGame.letra__p {
+  color: #FFE766;
+}
+#name-GameApp .tittle__index .span__nameGame.letra__l {
+  color: #FF6B6B;
+}
+#name-GameApp .tittle__index .span__nameGame.letra__a {
+  color: #FFE766;
+}
+#name-GameApp .tittle__index .span__nameGame.letra__y {
+  color: #C9FFA5;
+}
+#name-GameApp .tittle__index .span__nameGame:hover {
+  transform: rotateX(360deg);
+}
+#name-GameApp .tittle__index .span__nameGame:before {
+  content: attr(data-letter);
+  display: block;
+  text-shadow: none;
+  transform: translateZ(10px);
+}
+
+#button-index {
+  text-align: center;
+}
+#button-index .button__jugar {
+  color: #000000;
+  font-size: 1.5rem;
+  border-radius: 5rem;
+  border: none;
+  background-color: #C9FFA5;
+  padding: 2% 20% 2% 20%;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+}
+#button-index .button__jugar:hover {
+  transform: scale(1.1);
+  background-color: #C9FFA5;
+  padding: 3% 25% 3% 25%;
+  color: #000000;
+  box-shadow: 0 0 1rem #C9FFA5;
+}
+#button-index .button__jugar:active {
+  transform: scale(1.1);
+  background-color: #C9FFA5;
+  padding: 3% 25% 3% 25%;
+  color: #000000;
+  box-shadow: 0 0 1rem #C9FFA5;
+}
+
+#footer-index {
+  color: rgba(255, 255, 255, 0.4392156863);
+  font-family: "Roboto", sans-serif;
+}
+
+/* Categorys */
+#categorias {
+  background: url(../Image/Background/abtracto9.jpg) no-repeat center;
+  background-size: cover;
+}
+#categorias .title__categoria .letra__q {
+  color: #C9FFA5;
+}
+#categorias .title__categoria .letra__p {
+  color: #FFE766;
+}
+#categorias .title__categoria .letra__l {
+  color: #FF6B6B;
+}
+#categorias .title__categoria .letra__a {
+  color: #FFE766;
+}
+#categorias .title__categoria .letra__y {
+  color: #C9FFA5;
+}
+#categorias .card {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+}
+
+/* QuestionGame */
+#body-juegos {
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 5%;
+  background: url(../Image/Background/abtracto9.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#time-life #timer-container {
+  width: 100%;
+  border-radius: 10px;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
+  font-weight: bold;
+  padding: 1%;
+  font-size: 1.5rem;
+}
+#time-life #timer-container .div__time {
+  width: 3000px;
+  max-width: 1500px;
+  border-radius: 10px;
+  height: -moz-max-content;
+  height: max-content;
+  background: yellow;
+  text-align: center;
+  font-weight: bold;
+  padding: 1%;
+  font-size: 1.5rem;
+  margin-bottom: 1%;
+}
+#time-life #life-container {
+  width: 100%;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  border-radius: 10px;
+  height: -moz-max-content;
+  height: max-content;
+  background: yellow;
+  text-align: center;
+  font-weight: bold;
+  padding: 1%;
+  font-size: 1.5rem;
+  margin-bottom: 1%;
+}
+
+#playRoom #quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0% 10% 2% 10%;
+  margin: 0 auto;
+  text-align: center;
+}
+#playRoom #alert-correct {
+  width: 300px;
+  padding: 2%;
+  margin-bottom: 1%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+#playRoom #alert-correct .textCorrect {
+  border-radius: 10px;
+  background-color: #27ae60;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+#playRoom #alert-correct .textIncorrect {
+  border-radius: 10px;
+  background-color: #c0392b;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+#playRoom #category-container {
+  width: 100%;
+  padding: 2%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  background-color: rgba(255, 72, 0, 0.8156862745);
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 1%;
+}
+#playRoom #question-container {
+  background-color: #ffd900;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  padding: 3%;
+  margin-bottom: 20px;
+}
+#playRoom #answer-buttons-container {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 5px;
+  gap: 10px;
+}
+#playRoom #answer-buttons-container .answer__button {
+  width: 100%;
+  background-color: rgba(249, 249, 249, 0.9450980392);
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+#playRoom #answer-buttons-container .answer__button:hover {
+  background-color: rgba(249, 249, 249, 0.9450980392);
+  transition: all 0.3s;
+}
+#playRoom #answer-buttons-container .answer__button:active {
+  background-color: rgba(249, 249, 249, 0.9450980392);
+  transition: all 0.3s;
+}
+#playRoom #answer-buttons-container .correct {
+  background-color: #27ae60;
+  color: white;
+  font-weight: bold;
+}
+#playRoom #answer-buttons-container .correct:hover {
+  background-color: #27ae60;
+  color: white;
+  font-weight: bold;
+}
+#playRoom #answer-buttons-container .incorrect {
+  background-color: #c0392b;
+  color: white;
+  font-weight: bold;
+}
+#playRoom #answer-buttons-container .incorrect:hover {
+  background-color: #c0392b;
+  color: white;
+  font-weight: bold;
+}
+#playRoom #score-container {
+  font-weight: bold;
+  padding: 1%;
+  border-radius: 10px;
+  text-align: center;
+}
+#playRoom #score-container .score {
+  padding: 2%;
+  background: #C9FFA5;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+#playRoom #score-container .scoreFin {
+  padding: 5%;
+  border-radius: 15px;
+  background: #C9FFA5;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* Tutorial */
+/* Ayuda *//*# sourceMappingURL=main.css.map */
